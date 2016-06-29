@@ -20,11 +20,15 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         execute: function() {
             MyComponentComponent = (function () {
                 function MyComponentComponent() {
+                    this.name = 'Jared';
                 }
                 MyComponentComponent = __decorate([
                     core_1.Component({
                         selector: 'my-component',
-                        template: "\n        This is my component!\n    "
+                        template: "\n        Hi, I'm {{name}}.\n        <br>\n        <span [class.is-awesome]=\"inputElement.value === 'yes'\">Is it awesome?</span>\n        <br>\n        <input type=\"text\" #inputElement (keyup)=\"0\">\n    ",
+                        styleUrls: [
+                            'src/css/mycomponent.scss'
+                        ]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], MyComponentComponent);
@@ -34,5 +38,4 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         }
     }
 });
-
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm15LWNvbXBvbmVudC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFRQTtnQkFBQTtnQkFFQSxDQUFDO2dCQVJEO29CQUFDLGdCQUFTLENBQUM7d0JBQ1AsUUFBUSxFQUFFLGNBQWM7d0JBQ3hCLFFBQVEsRUFBRSx1Q0FFVDtxQkFDSixDQUFDOzt3Q0FBQTtnQkFHRiwyQkFBQztZQUFELENBRkEsQUFFQyxJQUFBO1lBRkQsdURBRUMsQ0FBQSIsImZpbGUiOiJteS1jb21wb25lbnQuY29tcG9uZW50LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtDb21wb25lbnR9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ215LWNvbXBvbmVudCcsXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgICAgVGhpcyBpcyBteSBjb21wb25lbnQhXG4gICAgYFxufSlcbmV4cG9ydCBjbGFzcyBNeUNvbXBvbmVudENvbXBvbmVudCB7XG5cbn1cbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==
+//# sourceMappingURL=my-component.component.js.map
