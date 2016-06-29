@@ -1,4 +1,4 @@
-System.register(['@angular/core', "./my-component.component"], function(exports_1, context_1) {
+System.register(['@angular/core', './puzzle/puzzle.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,15 +10,15 @@ System.register(['@angular/core', "./my-component.component"], function(exports_
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, my_component_component_1;
+    var core_1, puzzle_component_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (my_component_component_1_1) {
-                my_component_component_1 = my_component_component_1_1;
+            function (puzzle_component_1_1) {
+                puzzle_component_1 = puzzle_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -27,9 +27,9 @@ System.register(['@angular/core', "./my-component.component"], function(exports_
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'app',
-                        template: "\n        <h1>Angular 2 Boilerplate</h1>\n        <p>Lorem</p>\n        <my-component></my-component>\n       \n    ",
+                        template: "<my-puzzle></my-puzzle>",
                         directives: [
-                            my_component_component_1.MyComponentComponent
+                            puzzle_component_1.PuzzleComponent
                         ]
                     }), 
                     __metadata('design:paramtypes', [])
@@ -41,4 +41,4 @@ System.register(['@angular/core', "./my-component.component"], function(exports_
     }
 });
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFnQkE7Z0JBQUE7Z0JBRUEsQ0FBQztnQkFmRDtvQkFBQyxnQkFBUyxDQUFDO3dCQUNQLFFBQVEsRUFBRSxLQUFLO3dCQUNmLFFBQVEsRUFBRSxzSEFLVDt3QkFDRCxVQUFVLEVBQUU7NEJBQ1IsNkNBQW9CO3lCQUN2QjtxQkFDSixDQUFDOztnQ0FBQTtnQkFJRixtQkFBQztZQUFELENBRkEsQUFFQyxJQUFBO1lBRkQsdUNBRUMsQ0FBQSIsImZpbGUiOiJhcHAuY29tcG9uZW50LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtDb21wb25lbnR9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuaW1wb3J0IHtNeUNvbXBvbmVudENvbXBvbmVudH0gZnJvbSBcIi4vbXktY29tcG9uZW50LmNvbXBvbmVudFwiO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ2FwcCcsXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgICAgPGgxPkFuZ3VsYXIgMiBCb2lsZXJwbGF0ZTwvaDE+XG4gICAgICAgIDxwPkxvcmVtPC9wPlxuICAgICAgICA8bXktY29tcG9uZW50PjwvbXktY29tcG9uZW50PlxuICAgICAgIFxuICAgIGAsXG4gICAgZGlyZWN0aXZlczogW1xuICAgICAgICBNeUNvbXBvbmVudENvbXBvbmVudFxuICAgIF1cbn0pXG5cbmV4cG9ydCBjbGFzcyBBcHBDb21wb25lbnQge1xuXG59XG4iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFXQTtnQkFBQTtnQkFFQSxDQUFDO2dCQVZEO29CQUFDLGdCQUFTLENBQUM7d0JBQ1AsUUFBUSxFQUFFLEtBQUs7d0JBQ2YsUUFBUSxFQUFFLHlCQUF5Qjt3QkFDbkMsVUFBVSxFQUFFOzRCQUNSLGtDQUFlO3lCQUNsQjtxQkFDSixDQUFDOztnQ0FBQTtnQkFJRixtQkFBQztZQUFELENBRkEsQUFFQyxJQUFBO1lBRkQsdUNBRUMsQ0FBQSIsImZpbGUiOiJhcHAuY29tcG9uZW50LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtDb21wb25lbnR9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuaW1wb3J0IHtQdXp6bGVDb21wb25lbnR9IGZyb20gJy4vcHV6emxlL3B1enpsZS5jb21wb25lbnQnO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ2FwcCcsXG4gICAgdGVtcGxhdGU6IGA8bXktcHV6emxlPjwvbXktcHV6emxlPmAsXG4gICAgZGlyZWN0aXZlczogW1xuICAgICAgICBQdXp6bGVDb21wb25lbnRcbiAgICBdXG59KVxuXG5leHBvcnQgY2xhc3MgQXBwQ29tcG9uZW50IHtcblxufVxuIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9
