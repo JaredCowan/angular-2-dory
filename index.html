@@ -15,15 +15,17 @@
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
 
-
     <link rel="stylesheet" href="src/css/app.css">
 
 </head>
 <body>
-<my-app>Loading...</my-app>
+
+<app>Loading...</app>
 
 <script>
-    System.import('app').catch(function(err){ console.error(err);  });
+    System.import('app').catch(function (err) {
+        console.error(err);
+    });
 </script>
 <!--<script src="app/bundle.js"></script>-->
 </body>
